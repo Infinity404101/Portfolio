@@ -1,52 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projects</title>
-    <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Infinity404101</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-    	<h1> Projects </h1>
-    </header>
-    <p> This is a project page - showing the working/finished projects below</p>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>     
+  <nav>
+    <span class="nav-logo">Infinity404101</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+  </nav>
 
-    <h2> Main Projects </h2>
-    
-    <h3> Survive The Pit </h3>
-    <p> Survive The Pit is a roguelike 2D pixel game using Visual Basic in Visual Studio 2022 </p>
-    <p> <a href="https://github.com/infinity404101/Project---Survive-The-Pit">Survive The Pit</a> - Source code for the game </p>
+  <section class="section">
+    <p class="section-label">// main projects</p>
+    <h2 class="section-title">Projects</h2>
 
-    <h3> Minigames </h3>
-    <p> Description... </p>
-    <p> <a href="#"></a> - Source code to the game </p>
+    <div class="projects-grid">
 
-    <h3> Mask Escape Simulation </h3>
-    <p> Mask Escape Simulation is a theme game about mask for the Global Game Jam 2026 using Unreal Engine 5.4.4 </p>
-    <p> <a href="https://globalgamejam.org/games/2026/mask-escape-simulation-6">Mask Escape Simulation</a> - Link to the game </p>
-    <p> <a href="https://github.com/Infinity404101/Mask-Escape-Simulation">Mask Escape Simulation</a> - Source code in Github </p>
+      <!-- ── Positive Survivor ── -->
+      <div class="project-card">
+        <div class="slider">
+          <img class="slide" src="images/positive-survivor-image.png"   alt="Positive Survivor screenshot 1">
+          <img class="slide" src="images/positive-survivor-image-2.png" alt="Positive Survivor screenshot 2">
+          <img class="slide" src="images/positive-survivor-image-3.png" alt="Positive Survivor screenshot 3">
+          <img class="slide" src="images/positive-survivor-image-4.png" alt="Positive Survivor screenshot 4">
+          <img class="slide" src="images/positive-survivor-image-5.png" alt="Positive Survivor screenshot 5">
+          <img class="slide" src="images/positive-survivor-image-6.png" alt="Positive Survivor screenshot 6">
+          <img class="slide" src="images/positive-survivor-image-7.png" alt="Positive Survivor screenshot 7">
 
-    <h3> Upcoming Project </h3>
-    <p> Description... </p>
-    <p> <a href="#">Mask Escape Simulation</a> - Link to the game </p>
+          <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+          <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
 
-    <h2> Side Projects </h2>
+          <div class="slider-dots">
+            <button class="dot" aria-label="Slide 1"></button>
+            <button class="dot" aria-label="Slide 2"></button>
+            <button class="dot" aria-label="Slide 3"></button>
+            <button class="dot" aria-label="Slide 4"></button>
+            <button class="dot" aria-label="Slide 5"></button>
+            <button class="dot" aria-label="Slide 6"></button>
+            <button class="dot" aria-label="Slide 7"></button>
+          </div>
+        </div>
 
-    <h3> Taxi Booking App </h3>
-    <p> Taxi Booking App is a interactive website for booking taxi, using pywebio, html, jinja, python and bootstrap </p>
-    <p> <a href="https://github.com/Infinity404101/Taxi-Booking-App">Taxi Booking App</a> - Source code for the app website </p>
+        <div class="project-info">
+          <span class="project-tag">Hornet Engine &bull; 2D Game</span>
+          <h3 class="project-title">Positive Survivor</h3>
+          <span class="project-status status-done">Completed</span>
+          <p class="project-desc">
+            A top-down 2D roguelike survival game built in Hornet Engine provided by my university using Visual Studio 2022.
+            Fight waves of enemies across multiple rounds, collect experience to level up, and
+            survive as long as possible. Features health bars, round progression, enemy AI, and
+            a win condition at round 6.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/infinity404101/Project---Survive-The-Pit" class="project-link" target="_blank" rel="noopener">
+              &#x2197; GitHub Source
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <h3> Meeting App </h3>
-    <p> Meeting App is a interactive website for mobile app about booking taxi, using pywebio, html, python and bootstrap </p>
-    <p> <a href="https://github.com/Infinity404101/KV4012_Assessment2---Meeting-App">Meeting App</a> - Source code for the app website </p>
+      <!-- ── Mask Escape Simulation ── -->
+      <div class="project-card">
+        <div style="background:#111; display:flex; align-items:center; justify-content:center; aspect-ratio:16/10;">
+          <span style="font-family:'Share Tech Mono',monospace; color:#4ade80; font-size:0.85rem; letter-spacing:0.1em; opacity:0.6;">[ no screenshot yet ]</span>
+        </div>
+
+        <div class="project-info">
+          <span class="project-tag">Unreal Engine 5.4.4 &bull; Global Game Jam 2026</span>
+          <h3 class="project-title">Mask Escape Simulation</h3>
+          <span class="project-status status-done">Completed</span>
+          <p class="project-desc">
+            A theme game about masks built in under 48 hours for Global Game Jam 2026.
+            Created using Unreal Engine 5.4.4, combining puzzle and escape mechanics
+            around the jam theme.
+          </p>
+          <div class="project-links">
+            <a href="https://globalgamejam.org/games/2026/mask-escape-simulation-6" class="project-link" target="_blank" rel="noopener">
+              &#x2197; Play on GGJ
+            </a>
+            <a href="https://github.com/Infinity404101/Mask-Escape-Simulation" class="project-link" target="_blank" rel="noopener">
+              &#x2197; GitHub Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Upcoming ── -->
+      <div class="project-card">
+        <div style="background:#111; display:flex; align-items:center; justify-content:center; aspect-ratio:16/10;">
+          <span style="font-family:'Share Tech Mono',monospace; color:#4ade80; font-size:0.85rem; letter-spacing:0.1em; opacity:0.6;">[ in development ]</span>
+        </div>
+
+        <div class="project-info">
+          <span class="project-tag">TBA</span>
+          <h3 class="project-title">Upcoming Project</h3>
+          <span class="project-status status-wip">In Progress</span>
+          <p class="project-desc">
+            Details coming soon. Check back for updates.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Side Projects -->
+    <p class="section-label" style="margin-top:4rem">// side projects</p>
+    <h2 class="section-title">Side Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- ── Taxi Booking ── -->
+      <div class="project-card">
+        <div style="background:#111; display:flex; align-items:center; justify-content:center; aspect-ratio:16/10;">
+          <span style="font-family:'Share Tech Mono',monospace; color:#60a5fa; font-size:0.85rem; letter-spacing:0.1em; opacity:0.6;">[ web app ]</span>
+        </div>
+
+        <div class="project-info">
+          <span class="project-tag">Python &bull; PyWebIO &bull; Jinja &bull; Bootstrap</span>
+          <h3 class="project-title">Taxi Booking App</h3>
+          <span class="project-status status-done">Completed</span>
+          <p class="project-desc">
+            An interactive website for booking taxis, built with PyWebIO, HTML, Jinja templating,
+            Python and Bootstrap. Handles real-time booking flows and user feedback.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Infinity404101/Taxi-Booking-App" class="project-link" target="_blank" rel="noopener">
+              &#x2197; GitHub Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Meeting App ── -->
+      <div class="project-card">
+        <div style="background:#111; display:flex; align-items:center; justify-content:center; aspect-ratio:16/10;">
+          <span style="font-family:'Share Tech Mono',monospace; color:#60a5fa; font-size:0.85rem; letter-spacing:0.1em; opacity:0.6;">[ mobile web app ]</span>
+        </div>
+
+        <div class="project-info">
+          <span class="project-tag">Python &bull; PyWebIO &bull; Bootstrap</span>
+          <h3 class="project-title">Meeting App</h3>
+          <span class="project-status status-done">Completed</span>
+          <p class="project-desc">
+            A mobile-focused interactive website for booking and managing meetings,
+            built with PyWebIO, HTML and Bootstrap. Designed with a mobile-first layout.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Infinity404101/KV4012_Assessment2---Meeting-App" class="project-link" target="_blank" rel="noopener">
+              &#x2197; GitHub Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+  <footer>
+    <p>&copy; 2026 Infinity404101 &mdash; hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
